@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Ejitex Solar Enterprise | Solar Panels, Inverters & Installation</title>
+    <meta name="description" content="Explore solar panels, batteries, inverters, charge controllers, and renewable energy equipment from Ejitex Solar Enterprise. Contact us for product enquiries and solar installation quotations.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ejitex Solar Enterprise | Power Your Future with Solar">
+    <meta property="og:description" content="Discover solar panels, batteries, inverters, and installation services.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☀️</text></svg>">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --navy: #10213A;
+            --gold: #F4B323;
+            --gold-hover: #d99c1a;
+            --green: #239B62;
+            --white: #FFFFFF;
+            --light-bg: #F4F7FA;
+            --charcoal: #252B35;
+            --text-muted: #6B7280;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --font-main: 'Inter', sans-serif;
+            --font-heading: 'Syne', sans-serif;
+        }
+
+        /* Reset & Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body { font-family: var(--font-main); color: var(--charcoal); background: var(--white); line-height: 1.6; overflow-x: hidden; width: 100%; }
+        h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height: 1.15; color: var(--navy); }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; object-fit: cover; }
+        button { font-family: inherit; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--light-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--navy); border-radius: 5px; }
+
+        /* Utilities */
+        .container { width: 92%; max-width: 1280px; margin: 0 auto; }
+        .section-padding { padding: 80px 0; }
+        .section-header { text-align: center; margin-bottom: 45px; }
+        .section-header h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 12px; position: relative; display: inline-block; letter-spacing: -0.5px; }
+        .section-header h2::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 70px; height: 3px; background: linear-gradient(90deg, var(--green), var(--gold)); border-radius: 2px; }
+        .section-header p { color: var(--text-muted); font-size: clamp(0.95rem, 2vw, 1.1rem); max-width: 640px; margin: 18px auto 0; }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 26px; font-size: clamp(0.85rem, 2vw, 1rem); font-weight: 600; border-radius: 8px; cursor: pointer; transition: var(--transition); border: none; gap: 8px; text-align: center; white-space: nowrap; }
+        .btn-gold { background: var(--gold); color: var(--navy); }
+        .btn-gold:hover { background: var(--gold-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(244, 179, 35, 0.4); }
+        .btn-navy { background: var(--navy); color: var(--white); }
+        .btn-navy:hover { background: #08162a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(16, 33, 58, 0.3); }
+        .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+        .btn-outline:hover { background: var(--navy); color: var(--white); }
+        .btn-outline-light { background: transparent; color: var(--white); border: 2px solid var(--white); }
+        .btn-outline-light:hover { background: var(--white); color: var(--navy); }
+        .btn-whatsapp { background: var(--green); color: var(--white); }
+        .btn-whatsapp:hover { background: #1a8a53; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(35, 155, 98, 0.4); }
+
+        /* Animations */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+
+        /* Navigation */
+        nav { position: fixed; top: 0; left: 0; width: 100%; background: rgba(255,255,255,0.98); backdrop-filter: blur(10px); padding: 12px 0; z-index: 1000; transition: var(--transition); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        nav.scrolled { padding: 8px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; flex-direction: column; }
+        .logo-text { font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; color: var(--navy); line-height: 1; letter-spacing: -0.5px; }
+        .logo-text span { color: var(--green); }
+        .logo-slogan { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold); font-weight: 700; margin-top: 3px; }
+        
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a { color: var(--navy); font-weight: 600; font-size: 0.88rem; transition: var(--transition); position: relative; }
+        .nav-links a:hover { color: var(--green); }
+        .hamburger { display: none; color: var(--navy); cursor: pointer; background: none; border: none; padding: 5px; }
+
+        /* Hero */
+        .hero { min-height: 100vh; padding: 120px 0 60px; background: linear-gradient(135deg, rgba(16, 33, 58, 0.92) 0%, rgba(16, 33, 58, 0.85) 100%), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; display: flex; align-items: center; position: relative; overflow: hidden; }
+        .hero-content { color: var(--white); max-width: 820px; position: relative; z-index: 2; }
+        .hero-badge { display: inline-block; padding: 6px 14px; background: rgba(244, 179, 35, 0.15); border: 1px solid var(--gold); color: var(--gold); border-radius: 50px; font-size: clamp(0.65rem, 1.5vw, 0.8rem); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 18px; }
+        .hero h1 { font-size: clamp(1.8rem, 5vw, 4rem); margin-bottom: 18px; color: var(--white); line-height: 1.1; letter-spacing: -1px; }
+        .hero h1 span { color: var(--gold); }
+        .hero p { font-size: clamp(0.95rem, 2vw, 1.15rem); margin-bottom: 30px; color: #d1d5db; max-width: 640px; }
+        .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+        .hero-highlights { display: flex; gap: 20px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 25px; flex-wrap: wrap; }
+        .highlight-item { display: flex; align-items: center; gap: 8px; font-size: clamp(0.8rem, 1.8vw, 0.9rem); font-weight: 600; color: #e5e7eb; }
+        .highlight-item i { color: var(--green); flex-shrink: 0; }
+
+        /* About */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-image { border-radius: 14px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+        .about-image img { width: 100%; height: 480px; }
+        .about-content h2 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); margin-bottom: 15px; }
+        .about-content p { color: var(--text-muted); margin-bottom: 18px; font-size: clamp(0.92rem, 1.8vw, 1.02rem); }
+
+        /* Products */
+        .products-section { background: var(--light-bg); }
+        .shop-controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 16px; }
+        .search-bar { position: relative; width: 100%; max-width: 380px; }
+        .search-bar input { width: 100%; padding: 14px 18px 14px 46px; border: 2px solid transparent; border-radius: 10px; font-family: var(--font-main); font-size: 0.95rem; outline: none; transition: var(--transition); background: var(--white); box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+        .search-bar input:focus { border-color: var(--green); box-shadow: 0 0 0 4px rgba(35, 155, 98, 0.15); }
+        .search-bar i { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+        .filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+        .filter-btn { padding: 10px 18px; border: 2px solid transparent; background: var(--white); border-radius: 10px; cursor: pointer; font-family: var(--font-main); font-weight: 600; font-size: 0.85rem; transition: var(--transition); box-shadow: 0 4px 12px rgba(0,0,0,0.04); color: var(--navy); }
+        .filter-btn:hover, .filter-btn.active { background: var(--navy); color: var(--white); }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+        .product-card { background: var(--white); border-radius: 14px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.06); transition: var(--transition); display: flex; flex-direction: column; }
+        .product-card:hover { transform: translateY(-6px); box-shadow: 0 16px 36px rgba(0,0,0,0.1); }
+        .product-image { height: 200px; overflow: hidden; position: relative; background: #f0f0f0; }
+        .product-image img { width: 100%; height: 100%; transition: transform 0.6s ease; }
+        .product-card:hover .product-image img { transform: scale(1.06); }
+        .product-tag { position: absolute; top: 12px; left: 12px; background: var(--green); color: var(--white); padding: 4px 10px; border-radius: 50px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; z-index: 2; }
+        .product-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .product-info h3 { font-size: 1.1rem; margin-bottom: 8px; }
+        .product-info p { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 16px; flex-grow: 1; }
+        .product-actions { display: flex; gap: 8px; margin-top: auto; }
+        .product-actions .btn { padding: 10px 12px; font-size: 0.8rem; flex: 1; white-space: normal; }
+
+        /* Services */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .service-card { background: var(--white); padding: 35px 28px; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); transition: var(--transition); border-bottom: 4px solid transparent; display: flex; flex-direction: column; }
+        .service-card:hover { border-bottom-color: var(--green); transform: translateY(-5px); box-shadow: 0 16px 36px rgba(0,0,0,0.1); }
+        .service-icon { width: 60px; height: 60px; background: var(--light-bg); color: var(--green); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; transition: var(--transition); }
+        .service-card:hover .service-icon { background: var(--green); color: var(--white); transform: scale(1.08); }
+        .service-card h3 { margin-bottom: 12px; font-size: 1.2rem; }
+        .service-card p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; flex-grow: 1; }
+
+        /* Solutions */
+        .solutions-section { background: var(--navy); color: var(--white); }
+        .solutions-section .section-header h2 { color: var(--white); }
+        .solutions-section .section-header h2::after { background: var(--gold); }
+        .solutions-section .section-header p { color: #9ca3af; }
+        .solutions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+        .solution-card { background: rgba(255,255,255,0.05); padding: 35px 25px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.1); transition: var(--transition); text-align: center; }
+        .solution-card:hover { background: rgba(255,255,255,0.08); border-color: var(--gold); transform: translateY(-5px); }
+        .solution-icon { width: 70px; height: 70px; background: rgba(244, 179, 35, 0.12); color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; }
+        .solution-card h3 { color: var(--white); margin-bottom: 12px; font-size: 1.2rem; }
+        .solution-card p { color: #9ca3af; font-size: 0.88rem; margin-bottom: 20px; }
+        .solution-card .btn { border-color: var(--gold); color: var(--gold); background: transparent; }
+        .solution-card .btn:hover { background: var(--gold); color: var(--navy); }
+
+        /* Why Choose Us */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+        .feature-card { text-align: center; padding: 35px 20px; border: 1px solid #e5e7eb; border-radius: 14px; transition: var(--transition); background: var(--white); }
+        .feature-card:hover { border-color: var(--green); box-shadow: 0 12px 30px rgba(35, 155, 98, 0.1); transform: translateY(-5px); }
+        .feature-icon { width: 65px; height: 65px; background: var(--light-bg); color: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: var(--transition); }
+        .feature-card:hover .feature-icon { background: var(--green); color: var(--white); }
+        .feature-card h3 { margin-bottom: 12px; font-size: 1.1rem; }
+        .feature-card p { color: var(--text-muted); font-size: 0.88rem; }
+
+        /* FAQ */
+        .faq-section { background: var(--light-bg); }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--white); border-radius: 10px; margin-bottom: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); overflow: hidden; transition: var(--transition); }
+        .faq-question { width: 100%; text-align: left; padding: 20px 22px; background: none; border: none; font-size: clamp(0.95rem, 2vw, 1.05rem); font-weight: 700; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+        .faq-question i { transition: transform 0.3s ease; color: var(--green); flex-shrink: 0; }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 22px; }
+        .faq-item.active .faq-answer { max-height: 400px; padding-bottom: 20px; }
+        .faq-answer p { color: var(--text-muted); font-size: 0.92rem; }
+
+        /* Contact */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-info-item { display: flex; gap: 16px; margin-bottom: 25px; }
+        .contact-info-icon { width: 52px; height: 52px; background: var(--light-bg); color: var(--green); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .contact-info-text h4 { margin-bottom: 4px; font-size: 1.05rem; }
+        .contact-info-text p, .contact-info-text a { color: var(--text-muted); font-size: 0.95rem; word-break: break-word; }
+        .contact-info-text a:hover { color: var(--green); }
+        .contact-buttons { display: flex; flex-direction: column; gap: 12px; }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 0 25px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.3fr; gap: 35px; margin-bottom: 40px; }
+        .footer-col h4 { color: var(--gold); margin-bottom: 18px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .footer-col p { color: #9ca3af; font-size: 0.88rem; margin-bottom: 12px; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a { color: #9ca3af; font-size: 0.88rem; transition: var(--transition); }
+        .footer-col ul li a:hover { color: var(--gold); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .footer-bottom p { color: #6b7280; font-size: 0.85rem; }
+        .back-to-top { background: var(--green); color: var(--white); width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; border: none; cursor: pointer; transition: var(--transition); }
+        .back-to-top:hover { background: var(--gold); color: var(--navy); }
+
+        /* Floating WhatsApp */
+        .floating-whatsapp { position: fixed; bottom: 20px; right: 20px; background: var(--green); color: var(--white); width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(35, 155, 98, 0.4); z-index: 999; transition: var(--transition); }
+        .floating-whatsapp:hover { transform: scale(1.08); }
+
+        /* Modals */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(16, 33, 58, 0.9); backdrop-filter: blur(5px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: var(--transition); padding: 15px; }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal-content { background: var(--white); width: 100%; max-width: 620px; border-radius: 16px; padding: 30px 25px; position: relative; max-height: 90vh; overflow-y: auto; transform: translateY(20px) scale(0.98); transition: var(--transition); border-top: 5px solid var(--green); box-shadow: 0 25px 50px rgba(0,0,0,0.3); }
+        .modal-overlay.active .modal-content { transform: translateY(0) scale(1); }
+        .modal-close { position: absolute; top: 15px; right: 15px; background: var(--light-bg); border: none; cursor: pointer; color: var(--navy); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+        .modal-close:hover { background: var(--green); color: var(--white); transform: rotate(90deg); }
+        .modal-content h3 { font-size: clamp(1.3rem, 3vw, 1.7rem); margin-bottom: 8px; padding-right: 30px; }
+        .modal-content > p { color: var(--text-muted); margin-bottom: 22px; font-size: 0.9rem; }
+        
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.88rem; color: var(--navy); }
+        .form-control { width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-family: var(--font-main); font-size: 0.95rem; transition: var(--transition); background: var(--light-bg); }
+        .form-control:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 4px rgba(35, 155, 98, 0.15); background: var(--white); }
+        textarea.form-control { resize: vertical; min-height: 90px; }
+        .checkbox-group { display: flex; align-items: flex-start; gap: 10px; }
+        .checkbox-group input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--green); flex-shrink: 0; }
+        .checkbox-group label { font-weight: 400; font-size: 0.85rem; color: var(--text-muted); }
+        .error-message { color: #ef4444; font-size: 0.8rem; margin-top: 5px; display: none; font-weight: 500; }
+        .form-group.error .form-control { border-color: #ef4444; }
+        .form-group.error .error-message { display: block; }
+        .success-message { display: none; background: #d1fae5; color: #065f46; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9rem; border-left: 4px solid var(--green); }
+        .fallback-message { display: none; margin-top: 20px; padding: 15px; background: var(--light-bg); border-radius: 8px; border: 1px dashed #ccc; }
+        .fallback-message textarea { width: 100%; height: 130px; margin-bottom: 12px; padding: 12px; font-family: var(--font-main); border: 1px solid #ddd; border-radius: 8px; font-size: 0.85rem; }
+        .product-detail-img { width: 100%; height: 240px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 35px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .about-image img { height: 380px; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { position: fixed; top: 0; right: -100%; width: 85%; height: 100vh; background: var(--white); flex-direction: column; justify-content: center; align-items: center; gap: 20px; transition: var(--transition); box-shadow: -10px 0 30px rgba(0,0,0,0.15); padding: 30px; }
+            .nav-links.active { right: 0; }
+            .nav-links a { font-size: 1rem; }
+            .hamburger { display: block; z-index: 1001; }
+            
+            .hero { padding: 110px 0 50px; min-height: auto; }
+            .hero-buttons { flex-direction: column; align-items: stretch; }
+            .hero-buttons .btn { width: 100%; }
+            .hero-highlights { flex-direction: column; gap: 10px; }
+
+            .section-padding { padding: 55px 0; }
+            .shop-controls { flex-direction: column; align-items: stretch; }
+            .search-bar { max-width: 100%; }
+            .filter-buttons { overflow-x: auto; padding-bottom: 5px; flex-wrap: nowrap; }
+            .filter-btn { flex-shrink: 0; }
+
+            .product-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
+            .product-image { height: 150px; }
+            .product-info { padding: 14px; }
+            .product-info h3 { font-size: 0.95rem; }
+            .product-info p { font-size: 0.8rem; margin-bottom: 12px; }
+            .product-actions { flex-direction: column; }
+            .product-actions .btn { width: 100%; padding: 9px; font-size: 0.78rem; }
+
+            .services-grid, .solutions-grid, .features-grid { grid-template-columns: 1fr; }
+            .service-card, .solution-card, .feature-card { padding: 28px 22px; }
+
+            .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+
+            .modal-content { padding: 25px 18px; max-height: 92vh; }
+            .contact-buttons .btn { width: 100%; }
+
+            .floating-whatsapp { width: 52px; height: 52px; bottom: 15px; right: 15px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.7rem; }
+            .product-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+            .product-image { height: 130px; }
+            .product-info { padding: 12px; }
+            .product-info h3 { font-size: 0.85rem; }
+            .product-info p { font-size: 0.75rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+            .product-actions .btn { padding: 8px 5px; font-size: 0.72rem; }
+            .product-actions .btn i { display: none; }
+            .btn { padding: 12px 20px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { animation: none !important; transition: none !important; }
+            .reveal { opacity: 1; transform: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-text">Ejitex<span>Solar</span></div>
+                <div class="logo-slogan">Power Your Future</div>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i data-lucide="menu"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn btn-gold open-enquiry-modal" data-enquiry="General Inquiry">Request a Quote</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="hero-badge">Renewable Energy Solutions</span>
+                <h1>Power Your Future with Reliable <span>Solar Energy Solutions.</span></h1>
+                <p>Discover solar panels, batteries, inverters, charge controllers, and renewable energy equipment from Ejitex Solar Enterprise. Explore available products and contact us for quotations and solar installation enquiries.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-gold">Explore Our Products</a>
+                    <button class="btn btn-outline-light open-enquiry-modal" data-enquiry="General Inquiry">Request a Quote</button>
+                    <button class="btn btn-navy open-enquiry-modal" data-enquiry="Installation">Book an Installation Enquiry</button>
+                    <a href="https://wa.me/2347089410454?text=Hello%20Ejitex%20Solar%20Enterprise,%20I%20would%20like%20to%20enquire%20about%20your%20solar%20panels,%20batteries,%20inverters,%20charge%20controllers,%20and%20renewable%20energy%20equipment." target="_blank" class="btn btn-whatsapp">
+                        <i data-lucide="message-circle"></i> Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="hero-highlights">
+                    <div class="highlight-item"><i data-lucide="check-circle"></i> Solar & Renewable Energy</div>
+                    <div class="highlight-item"><i data-lucide="check-circle"></i> Product Sales</div>
+                    <div class="highlight-item"><i data-lucide="check-circle"></i> Installation Services</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-padding">
+        <div class="container about-grid">
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=800&q=80" alt="Solar installation" loading="lazy">
+            </div>
+            <div class="about-content reveal reveal-delay-1">
+                <h2>About Ejitex Solar Enterprise</h2>
+                <p>Ejitex Solar Enterprise specializes in solar energy and renewable energy equipment, offering products such as solar panels, batteries, inverters, and charge controllers.</p>
+                <p>We help customers explore solar equipment options and enquire about installation solutions suited to their energy requirements.</p>
+                <div style="display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap;">
+                    <a href="#products" class="btn btn-navy">Explore Products</a>
+                    <a href="https://wa.me/2347089410454?text=Hello%20Ejitex%20Solar%20Enterprise,%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" class="btn btn-whatsapp"><i data-lucide="message-circle"></i> WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section-padding products-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Solar Product Catalogue</h2>
+                <p>Explore our range of solar panels, batteries, inverters, and charge controllers.</p>
+            </div>
+            
+            <div class="shop-controls reveal">
+                <div class="search-bar">
+                    <i data-lucide="search"></i>
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                </div>
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="panels">Panels</button>
+                    <button class="filter-btn" data-filter="batteries">Batteries</button>
+                    <button class="filter-btn" data-filter="inverters">Inverters</button>
+                    <button class="filter-btn" data-filter="controllers">Controllers</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="section-padding solutions-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Solar Solutions for Every Need</h2>
+                <p>Tailored solar equipment and installation enquiries for different customer types.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card reveal">
+                    <div class="solution-icon"><i data-lucide="home"></i></div>
+                    <h3>Residential Solar</h3>
+                    <p>Home backup power, solar panels, inverters, and battery storage for household needs.</p>
+                    <button class="btn open-enquiry-modal" data-enquiry="Residential Solar">Request a Quote</button>
+                </div>
+                <div class="solution-card reveal reveal-delay-1">
+                    <div class="solution-icon"><i data-lucide="building-2"></i></div>
+                    <h3>Commercial Solar</h3>
+                    <p>Shops, offices, and commercial premises power solutions.</p>
+                    <button class="btn open-enquiry-modal" data-enquiry="Commercial Solar">Request a Quote</button>
+                </div>
+                <div class="solution-card reveal reveal-delay-2">
+                    <div class="solution-icon"><i data-lucide="factory"></i></div>
+                    <h3>Industrial Solar</h3>
+                    <p>Larger power requirements and industrial solar applications.</p>
+                    <button class="btn open-enquiry-modal" data-enquiry="Industrial Solar">Request a Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation -->
+    <section id="installation" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Professional Solar Installation</h2>
+                <p>Planning to switch to solar energy or improve your existing setup? Contact us to enquire about solar equipment and installation options.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="sun"></i></div>
+                    <h3>Solar Panel Installation</h3>
+                    <p>Professional installation of solar panels for residential and commercial properties.</p>
+                    <button class="btn btn-outline open-enquiry-modal" data-enquiry="Solar Panel Installation">Request Installation Quote</button>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon"><i data-lucide="battery-charging"></i></div>
+                    <h3>Inverter & Battery Setup</h3>
+                    <p>Installation and configuration of inverters and battery storage systems.</p>
+                    <button class="btn btn-outline open-enquiry-modal" data-enquiry="Inverter & Battery Setup">Request Installation Quote</button>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon"><i data-lucide="settings"></i></div>
+                    <h3>Charge Controller Installation</h3>
+                    <p>Setup of MPPT and PWM charge controllers for your solar system.</p>
+                    <button class="btn btn-outline open-enquiry-modal" data-enquiry="Charge Controller Installation">Request Installation Quote</button>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon"><i data-lucide="zap"></i></div>
+                    <h3>Complete System Setup</h3>
+                    <p>End-to-end solar system installation tailored to your energy requirements.</p>
+                    <button class="btn btn-outline open-enquiry-modal" data-enquiry="Complete System Setup">Request Installation Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section-padding" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Why Choose Ejitex Solar Enterprise?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i data-lucide="layers"></i></div>
+                    <h3>Solar & Renewable Energy Equipment</h3>
+                    <p>Panels, batteries, inverters, and charge controllers in one place.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon"><i data-lucide="help-circle"></i></div>
+                    <h3>Product Quotation Requests</h3>
+                    <p>Contact us to request prices, specifications, and availability.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon"><i data-lucide="tool"></i></div>
+                    <h3>Solar Installation Enquiries</h3>
+                    <p>Enquire about installation services for your home or business.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon"><i data-lucide="message-circle"></i></div>
+                    <h3>Direct WhatsApp & Email Contact</h3>
+                    <p>Reach us conveniently for all your questions and enquiries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding faq-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <button class="faq-question">What solar products does Ejitex Solar Enterprise offer? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer"><p>We offer solar panels, solar batteries, inverters, charge controllers, and related renewable energy equipment.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is the difference between a solar inverter and a charge controller? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer"><p>A charge controller regulates the voltage and current from the solar panels to prevent overcharging the battery. A solar inverter converts the DC power stored in batteries into AC power for your appliances.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I choose the right solar panel? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer"><p>Choosing a solar panel depends on your energy needs, available roof space, and budget. Contact us to discuss your requirements.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What battery capacity do I need? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer"><p>Battery capacity depends on your daily energy consumption and desired backup duration. We can guide you based on your appliance requirements.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I request prices before purchasing? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer"><p>Yes, you can request prices by clicking the "Request Price" button on any product, or by contacting us directly via WhatsApp or phone.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you provide solar installation? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer"><p>Yes, we offer installation services for solar panels, inverters, batteries, and complete solar systems. Please contact us to discuss your installation requirements.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can I contact Ejitex Solar Enterprise? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer"><p>You can contact us via WhatsApp or phone at 0708 941 0454, or by email at ejitexsolarenterprise@gmail.com.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do your products come with warranties? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer"><p>Warranty terms may vary by product and manufacturer. Please contact us to confirm warranty details for specific products.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Contact Ejitex Solar Enterprise</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="reveal">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i data-lucide="phone"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="tel:+2347089410454">0708 941 0454</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i data-lucide="mail"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Email</h4>
+                            <a href="mailto:ejitexsolarenterprise@gmail.com">ejitexsolarenterprise@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal contact-buttons">
+                    <a href="https://wa.me/2347089410454?text=Hello%20Ejitex%20Solar%20Enterprise,%20I%20would%20like%20to%20enquire%20about%20your%20products%20and%20services." target="_blank" class="btn btn-whatsapp">
+                        <i data-lucide="message-circle"></i> Chat on WhatsApp
+                    </a>
+                    <a href="mailto:ejitexsolarenterprise@gmail.com" class="btn btn-outline">
+                        <i data-lucide="mail"></i> Send an Email
+                    </a>
+                    <button class="btn btn-gold open-enquiry-modal" data-enquiry="General Inquiry">Request a Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 15px;">
+                        <div class="logo-text" style="color: var(--white);">Ejitex<span>Solar</span></div>
+                        <div class="logo-slogan">Power Your Future</div>
+                    </a>
+                    <p>Your trusted supplier for solar panels, batteries, inverters, charge controllers, and renewable energy installation.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Solar Panels</a></li>
+                        <li><a href="#products">Solar Batteries</a></li>
+                        <li><a href="#products">Solar Inverters</a></li>
+                        <li><a href="#products">Charge Controllers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Phone: 0708 941 0454</p>
+                    <p>Email: ejitexsolarenterprise@gmail.com</p>
+                    <a href="https://wa.me/2347089410454" target="_blank" class="btn btn-whatsapp" style="margin-top: 10px; padding: 10px 18px; font-size: 0.85rem;">
+                        <i data-lucide="message-circle"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Ejitex Solar Enterprise. All rights reserved.</p>
+                <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/2347089410454?text=Hello%20Ejitex%20Solar%20Enterprise,%20I%20would%20like%20to%20enquire%20about%20your%20products%20and%20services." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-product-modal" aria-label="Close modal">
+                <i data-lucide="x"></i>
+            </button>
+            <img id="modal-product-img" class="product-detail-img" src="" alt="Product Image">
+            <h3 id="modal-product-name"></h3>
+            <p id="modal-product-desc" style="margin-bottom: 12px; color: var(--text-muted); font-size: 0.9rem;"></p>
+            <div id="modal-product-specs" style="margin-bottom: 20px; font-size: 0.9rem; color: var(--navy); font-weight: 600;"></div>
+            <div style="display: flex; gap: 10px; flex-direction: column;">
+                <a id="modal-product-wa" href="#" target="_blank" class="btn btn-whatsapp" style="width: 100%;"><i data-lucide="message-circle"></i> Enquire on WhatsApp</a>
+                <button id="modal-product-price-btn" class="btn btn-outline open-enquiry-modal" data-enquiry="" style="width: 100%;">Request Price</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enquiry Modal -->
+    <div class="modal-overlay" id="enquiry-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-enquiry-modal" aria-label="Close modal">
+                <i data-lucide="x"></i>
+            </button>
+            <h3>Request a Quote</h3>
+            <p>Fill out the form and we will open a WhatsApp chat with your details.</p>
+            
+            <div class="success-message" id="success-message">
+                WhatsApp is opening. Please press <strong>Send</strong> to deliver your enquiry. If it didn't open, use the fallback below.
+            </div>
+
+            <form id="enquiry-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" class="form-control" required>
+                    <div class="error-message">Please enter your full name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                    <div class="error-message">Please enter your phone number.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="customer-type">Customer Type *</label>
+                    <select id="customer-type" class="form-control" required>
+                        <option value="">Select type</option>
+                        <option value="Residential">Residential</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Industrial">Industrial</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="error-message">Please select a customer type.</div>
+                </div>
+                <div class="form-group">
+                    <label for="enquiry-type">Enquiry Type *</label>
+                    <select id="enquiry-type" class="form-control" required>
+                        <option value="">Select type</option>
+                        <option value="Product Purchase">Product Purchase</option>
+                        <option value="Installation">Installation</option>
+                        <option value="Complete Solar System">Complete Solar System</option>
+                        <option value="Bulk Purchase">Bulk Purchase</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="error-message">Please select an enquiry type.</div>
+                </div>
+                <div class="form-group">
+                    <label for="product-interest">Product or Service *</label>
+                    <input type="text" id="product-interest" class="form-control" placeholder="e.g., 300W Solar Panel" required>
+                    <div class="error-message">Please enter the product/service.</div>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location *</label>
+                    <input type="text" id="location" class="form-control" placeholder="City / State" required>
+                    <div class="error-message">Please enter your location.</div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Requirements *</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                    <div class="error-message">Please describe your requirements.</div>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">I agree that Ejitex Solar Enterprise may use my information to respond to my inquiry. *</label>
+                </div>
+                <div class="error-message" id="consent-error" style="margin-bottom: 12px;">You must agree to the privacy terms.</div>
+                
+                <button type="submit" class="btn btn-gold" style="width: 100%;" id="submit-btn">Send Enquiry on WhatsApp</button>
+            </form>
+
+            <div class="fallback-message" id="fallback-message">
+                <p style="margin-bottom: 12px; font-weight: 600;">If WhatsApp didn't open, copy the message below and send it manually:</p>
+                <textarea id="fallback-text" readonly></textarea>
+                <button class="btn btn-gold" id="copy-btn" style="width: 100%; margin-bottom: 10px;">Copy Message</button>
+                <button class="btn btn-outline" id="retry-btn" style="width: 100%;">Try WhatsApp Again</button>
+            </div>
+            
+            <p style="font-size: 0.8rem; color: #888; margin-top: 18px; text-align: center;">Your information is only used to respond to this inquiry.</p>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+            
+            if (window.scrollY > 500) backToTop.style.display = 'flex';
+            else backToTop.style.display = 'none';
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            if(navLinks.classList.contains('active')) icon.setAttribute('data-lucide', 'x');
+            else icon.setAttribute('data-lucide', 'menu');
+            lucide.createIcons();
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+        });
+
+        // Product Data
+        const products = [
+            {
+                id: 1,
+                name: "300W Monocrystalline Solar Panel",
+                category: "panels",
+                tag: "Panels",
+                desc: "High-efficiency monocrystalline solar panel for residential and commercial installations.",
+                img: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=80",
+                specs: "Power: 300W | Type: Monocrystalline | Voltage: 24V",
+                waMsg: "Hello Ejitex Solar Enterprise, I am interested in the 300W Monocrystalline Solar Panel. Please send me the current price and availability."
+            },
+            {
+                id: 2,
+                name: "200Ah Deep Cycle Battery",
+                category: "batteries",
+                tag: "Batteries",
+                desc: "Reliable deep cycle battery for solar energy storage and backup systems.",
+                img: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80",
+                specs: "Capacity: 200Ah | Voltage: 12V | Type: Deep Cycle",
+                waMsg: "Hello Ejitex Solar Enterprise, I am interested in the 200Ah Deep Cycle Battery. Please send me the current price and availability."
+            },
+            {
+                id: 3,
+                name: "5KVA Hybrid Inverter",
+                category: "inverters",
+                tag: "Inverters",
+                desc: "Versatile hybrid inverter for solar and battery systems.",
+                img: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80",
+                specs: "Capacity: 5KVA | Type: Hybrid | MPPT: Built-in",
+                waMsg: "Hello Ejitex Solar Enterprise, I am interested in the 5KVA Hybrid Inverter. Please send me the current price and availability."
+            },
+            {
+                id: 4,
+                name: "60A MPPT Charge Controller",
+                category: "controllers",
+                tag: "Controllers",
+                desc: "Efficient MPPT charge controller for maximizing solar panel output.",
+                img: "https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=600&q=80",
+                specs: "Current: 60A | Type: MPPT | System Voltage: 12V/24V/48V",
+                waMsg: "Hello Ejitex Solar Enterprise, I am interested in the 60A MPPT Charge Controller. Please send me the current price and availability."
+            },
+            {
+                id: 5,
+                name: "100Ah Lithium Battery",
+                category: "batteries",
+                tag: "Batteries",
+                desc: "Lightweight lithium battery with longer lifespan for solar storage.",
+                img: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80",
+                specs: "Capacity: 100Ah | Chemistry: LiFePO4 | Voltage: 12V",
+                waMsg: "Hello Ejitex Solar Enterprise, I am interested in the 100Ah Lithium Battery. Please send me the current price and availability."
+            },
+            {
+                id: 6,
+                name: "3KVA Off-Grid Inverter",
+                category: "inverters",
+                tag: "Inverters",
+                desc: "Off-grid inverter for standalone solar systems and backup power.",
+                img: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=600&q=80",
+                specs: "Capacity: 3KVA | Type: Off-Grid | Waveform: Pure Sine Wave",
+                waMsg: "Hello Ejitex Solar Enterprise, I am interested in the 3KVA Off-Grid Inverter. Please send me the current price and availability."
+            }
+        ];
+
+        const productGrid = document.getElementById('productGrid');
+        const searchInput = document.getElementById('searchInput');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        function renderProducts(filter = 'all', search = '') {
+            productGrid.innerHTML = '';
+            
+            const filtered = products.filter(p => {
+                const matchesFilter = filter === 'all' || p.category === filter;
+                const matchesSearch = p.name.toLowerCase().includes(search.toLowerCase()) || p.desc.toLowerCase().includes(search.toLowerCase());
+                return matchesFilter && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                productGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; color: #666; padding: 30px;">No products found.</p>';
+                return;
+            }
+
+            filtered.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <div class="product-image">
+                        <span class="product-tag">${product.tag}</span>
+                        <img src="${product.img}" alt="${product.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=Product'">
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <p>${product.desc}</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline view-details-btn" data-id="${product.id}">Details</button>
+                            <a href="https://wa.me/2347089410454?text=${encodeURIComponent(product.waMsg)}" target="_blank" class="btn btn-whatsapp"><i data-lucide="message-circle"></i> Enquire</a>
+                        </div>
+                    </div>
+                `;
+                productGrid.appendChild(card);
+            });
+            
+            document.querySelectorAll('.view-details-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.currentTarget.getAttribute('data-id'));
+                    openProductModal(id);
+                });
+            });
+            lucide.createIcons();
+        }
+
+        renderProducts();
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderProducts(btn.getAttribute('data-filter'), searchInput.value);
+            });
+        });
+
+        searchInput.addEventListener('input', (e) => {
+            const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+            renderProducts(activeFilter, e.target.value);
+        });
+
+        const productModal = document.getElementById('product-modal');
+        const closeProductModal = document.getElementById('close-product-modal');
+        
+        function openProductModal(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+            document.getElementById('modal-product-img').src = product.img;
+            document.getElementById('modal-product-name').textContent = product.name;
+            document.getElementById('modal-product-desc').textContent = product.desc;
+            document.getElementById('modal-product-specs').textContent = product.specs;
+            document.getElementById('modal-product-wa').href = `https://wa.me/2347089410454?text=${encodeURIComponent(product.waMsg)}`;
+            document.getElementById('modal-product-price-btn').setAttribute('data-enquiry', product.name);
+            productModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeProductModal.addEventListener('click', () => {
+            productModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        productModal.addEventListener('click', (e) => {
+            if (e.target === productModal) {
+                productModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        const enquiryModal = document.getElementById('enquiry-modal');
+        const closeEnquiryModal = document.getElementById('close-enquiry-modal');
+        const enquiryForm = document.getElementById('enquiry-form');
+        const successMessage = document.getElementById('success-message');
+        const fallbackMessage = document.getElementById('fallback-message');
+        const fallbackText = document.getElementById('fallback-text');
+        const submitBtn = document.getElementById('submit-btn');
+        const enquiryTypeSelect = document.getElementById('enquiry-type');
+        const productInterestInput = document.getElementById('product-interest');
+
+        document.body.addEventListener('click', (e) => {
+            if (e.target.closest('.open-enquiry-modal')) {
+                e.preventDefault();
+                const btn = e.target.closest('.open-enquiry-modal');
+                const enquiryType = btn.getAttribute('data-enquiry');
+                
+                successMessage.style.display = 'none';
+                fallbackMessage.style.display = 'none';
+                enquiryForm.style.display = 'block';
+
+                if (enquiryType) {
+                    let matched = false;
+                    for (let option of enquiryTypeSelect.options) {
+                        if (enquiryType.toLowerCase().includes(option.value.toLowerCase()) && option.value !== 'Other') {
+                            enquiryTypeSelect.value = option.value;
+                            matched = true;
+                            break;
+                        }
+                    }
+                    if (!matched) enquiryTypeSelect.value = 'Other';
+
+                    if (enquiryType !== 'General Inquiry' && !enquiryType.includes('Solar') && !enquiryType.includes('Installation') && !enquiryType.includes('Setup')) {
+                        productInterestInput.value = enquiryType;
+                    } else if (enquiryType.includes('Installation') || enquiryType.includes('Setup')) {
+                        productInterestInput.value = enquiryType;
+                    } else {
+                        productInterestInput.value = '';
+                    }
+                }
+                
+                enquiryModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        closeEnquiryModal.addEventListener('click', () => {
+            enquiryModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        enquiryModal.addEventListener('click', (e) => {
+            if (e.target === enquiryModal) {
+                enquiryModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (enquiryModal.classList.contains('active')) closeEnquiryModal.click();
+                if (productModal.classList.contains('active')) closeProductModal.click();
+            }
+        });
+
+        enquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+            const requiredFields = ['name', 'phone', 'customer-type', 'enquiry-type', 'product-interest', 'location', 'message'];
+            
+            requiredFields.forEach(fieldId => {
+                const input = document.getElementById(fieldId);
+                const group = input.closest('.form-group');
+                if (!input.value.trim()) {
+                    group.classList.add('error');
+                    isValid = false;
+                } else {
+                    group.classList.remove('error');
+                }
+            });
+
+            const consent = document.getElementById('consent');
+            const consentError = document.getElementById('consent-error');
+            if (!consent.checked) {
+                consentError.style.display = 'block';
+                isValid = false;
+            } else {
+                consentError.style.display = 'none';
+            }
+
+            if (!isValid) return;
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Processing...';
+
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const customerType = document.getElementById('customer-type').value;
+            const enquiryType = document.getElementById('enquiry-type').value;
+            const productInterest = document.getElementById('product-interest').value.trim();
+            const location = document.getElementById('location').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            let waMessage = `Hello Ejitex Solar Enterprise,\n\nI would like to make an enquiry.\n\n`;
+            waMessage += `Full Name: ${name}\n`;
+            waMessage += `Phone: ${phone}\n`;
+            if (email) waMessage += `Email: ${email}\n`;
+            waMessage += `Customer Type: ${customerType}\n`;
+            waMessage += `Enquiry Type: ${enquiryType}\n`;
+            waMessage += `Product/Service: ${productInterest}\n`;
+            waMessage += `Location: ${location}\n\n`;
+            waMessage += `Requirements:\n${message}\n\n`;
+            waMessage += `Please provide information about the available options, pricing, and next steps.\n\nThank you.`;
+
+            const encodedMessage = encodeURIComponent(waMessage);
+            const waUrl = `https://wa.me/2347089410454?text=${encodedMessage}`;
+
+            const newWindow = window.open(waUrl, '_blank');
+
+            if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+                showFallback(waMessage);
+            } else {
+                enquiryForm.style.display = 'none';
+                successMessage.style.display = 'block';
+                showFallback(waMessage);
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Send Enquiry on WhatsApp';
+        });
+
+        function showFallback(message) {
+            fallbackMessage.style.display = 'block';
+            fallbackText.value = message;
+            document.getElementById('copy-btn').onclick = () => {
+                fallbackText.select();
+                document.execCommand('copy');
+                const btn = document.getElementById('copy-btn');
+                const orig = btn.innerHTML;
+                btn.innerHTML = 'Copied!';
+                setTimeout(() => btn.innerHTML = orig, 2000);
+            };
+            document.getElementById('retry-btn').onclick = () => {
+                window.open(`https://wa.me/2347089410454?text=${encodeURIComponent(message)}`, '_blank');
+            };
+        }
+
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('input', () => {
+                input.closest('.form-group').classList.remove('error');
+            });
+        });
+        document.getElementById('consent').addEventListener('change', () => {
+            document.getElementById('consent-error').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
